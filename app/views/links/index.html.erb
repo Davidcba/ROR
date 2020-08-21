@@ -1,0 +1,7 @@
+<h1>Links#index</h1>
+<p>Find me in app/views/links/index.html.erb</p>
+<ul>
+  <% @my_links.each do |link| %>
+    <li> <%= link_to link.short_url, link.original_url %></li>
+  <% end %>
+</ul>
